@@ -1,33 +1,205 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+      .carousel-item:nth-child(1) {
+        background-image: url("img/pair1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
 </head>
-
 <body>
+      <!--Main Navigation-->
+  <header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-carousel-init>
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+      </div>
 
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center" data-mdb-theme="dark">
+                <h1 class="mb-3">Pratibha 💍 Shiwanshu</h1>
+                <h5 class="mb-4">Explore dozens of memories & emotions</h5>
+                <a class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init href="https://drive.google.com/drive/u/3/folders/18DJ69twXK_Eog2kslgWP37EZxP0KMVss"
+                  role="button" rel="nofollow" target="_blank">View Wedding Pics</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Inner -->
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Special Memories</strong></h4>
+
+        <!--Section: Haldi-->
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/haldi.JPG" class="img-fluid" />
+                <a href="https://drive.google.com/drive/u/3/folders/1emOFfcEljuD4QOFK7GpCmU70V9zw3Hev">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Haldi</h5>
+                <p class="card-text">
+                  Dipped in Love & Turmeric!
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+              </div>
+            </div>
+          </div>
+          <!--Section: Sangeet-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/sangeet.jpg" class="img-fluid" />
+                <a href="https://drive.google.com/drive/u/3/folders/1ogNA0Pmq-vEqMKWe761wPo_gYO3kWiOm">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sangeet</h5>
+                <p class="card-text">
+                  Explore moves that shakes your memories.
+                </p>
+                <a href="https://drive.google.com/drive/u/3/folders/1ogNA0Pmq-vEqMKWe761wPo_gYO3kWiOm" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+              </div>
+            </div>
+          </div>
+          <!--Section: Puja-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/together.jpg" class="img-fluid" />
+                <a href="https://drive.google.com/drive/u/3/folders/1zsU3KGue7NIv6SchiYrJbBjN9QsJ_P6t">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Puja</h5>
+                <p class="card-text">
+                  Connecting with the Divine.
+                </p>
+                <a href="https://drive.google.com/drive/u/3/folders/1zsU3KGue7NIv6SchiYrJbBjN9QsJ_P6t" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+              </div>
+            </div>
+          </div>
+          <!--Section: Groom Mehendi-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/mehndi.jpg" class="img-fluid" />
+                <a href="https://drive.google.com/drive/u/3/folders/1bdfKJw6z_1oQWpgumBpHVFv-CX6-faB6">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Groom Mehendi</h5>
+                <p class="card-text">
+                  Connecting with Greens.
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+              </div>
+            </div>
+          </div>
+          <!--Section: Bride Mehendi-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/mehndi-bride.jpg" class="img-fluid" />
+                <a href="https://drive.google.com/drive/u/3/folders/1nLYlYkNoOv0z7BMai9nWFacrpHt-88F0">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bride Mehendi</h5>
+                <p class="card-text">
+                  Connecting with Greens.
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+
+    <hr class="m-0" />
+
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2025 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/"></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+    <!-- MDB -->
 </body>
-
 </html>
