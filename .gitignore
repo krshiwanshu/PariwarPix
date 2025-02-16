@@ -7,3 +7,4 @@ dist
 .idea/modules.xml
 404.html
 img/.gitkeep
+*/.DS_Store
